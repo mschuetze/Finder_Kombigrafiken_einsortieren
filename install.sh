@@ -12,7 +12,12 @@ echo "Lade neueste Version der Schnellaktion herunter..."
 curl -sL "$REPO_URL" -o "$TMP_DIR/repo.zip"
 unzip -q "$TMP_DIR/repo.zip" -d "$TMP_DIR"
 
-WORKFLOW_PATH="$TMP_DIR"/*/"$ACTION_NAME"
+WORKFLOW_PATHS=("$TMP_DIR"/*/"$ACTION_NAME")
+if [ ! -d "${WORKFLOW_PATHS[0]}" ]; then
+	echo "Fehler: Workflow '$ACTION_NAME' wurde im heruntergeladenen Archiv nicht gefunden." >&2
+	exit 1
+fi
+WORKFLOW_PATH="${WORKFLOW_PATHS[0]}"
 VERSION=$(plutil -extract actions.0.action.ActionParameters.source raw -o - "$WORKFLOW_PATH/Contents/document.wflow" | sed -nE 's/.*set currentVersion to "([^"]+)".*/\1/p')
 if [ -z "$VERSION" ]; then
 	echo "Fehler: Workflow-Version konnte nicht ausgelesen werden." >&2
