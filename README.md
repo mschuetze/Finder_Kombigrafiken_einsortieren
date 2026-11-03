@@ -16,5 +16,13 @@ Der Fokus liegt auf der schnellen Sortierung von exportierten Grafikdateien nach
 
 ## Installation
 
-Das Skript `install.sh` installiert die Automator-Workflow-Datei in `~/Library/Services` und aktiviert sie im Finder.
+Die Installation erfolgt im Terminal über einen einzigen Copy-&-Paste-Befehl. Das Skript lädt den Workflow aus diesem GitHub-Repository herunter, installiert ihn in `~/Library/Services` und lädt Finder neu.
 
+1. Terminal öffnen (Finder > Programme > Dienstprogramme > Terminal).
+2. Den folgenden Befehl vollständig kopieren, ins Terminal einfügen und Enter drücken:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/mschuetze/Finder_Kombigrafiken_einsortieren/main/install.sh | bash
+```
+
+Nach erfolgreicher Installation erscheint die Aktion im Finder unter Rechtsklick > Dienste > Finder_Kombigrafiken_einsortieren. Eine manuelle Eingabe oder Bearbeitung von Befehlen ist nicht erforderlich.
