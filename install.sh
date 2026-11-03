@@ -4,7 +4,7 @@ set -e
 ACTION_NAME="Finder_Kombigrafiken_einsortieren.workflow"
 TARGET_DIR="$HOME/Library/Services"
 # Ersetzen Sie DEIN-GITHUB-NUTZER und DEIN-REPO durch Ihre echten GitHub-Werte:
-REPO_URL="https://github.com/DEIN-GITHUB-NUTZER/Finder_Kombigrafiken_einsortieren/archive/refs/heads/main.zip"
+REPO_URL="https://github.com/mschuetze/Finder_Kombigrafiken_einsortieren/archive/refs/heads/main.zip"
 TMP_DIR=$(mktemp -d)
 
 echo "Lade neueste Version der Schnellaktion herunter..."
