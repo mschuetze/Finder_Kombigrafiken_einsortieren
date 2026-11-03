@@ -2,6 +2,7 @@
 set -e
 
 ACTION_NAME="Finder_Kombigrafiken_einsortieren.workflow"
+VERSION="v0.2.0"
 TARGET_DIR="$HOME/Library/Services"
 # Ersetzen Sie DEIN-GITHUB-NUTZER und DEIN-REPO durch Ihre echten GitHub-Werte:
 REPO_URL="https://github.com/mschuetze/Finder_Kombigrafiken_einsortieren/archive/refs/heads/main.zip"
@@ -27,4 +28,4 @@ killall Finder 2>/dev/null || true
 # Temp-Dateien löschen
 rm -rf "$TMP_DIR"
 
-echo "Erfolgreich installiert! 'Finder_Kombigrafiken_einsortieren' ist im Finder aktiv."
+echo "Erfolgreich installiert: Finder_Kombigrafiken_einsortieren ($VERSION). Die Aktion ist nun im Finder aktiv."

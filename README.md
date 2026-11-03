@@ -25,4 +25,4 @@ Die Installation erfolgt im Terminal über einen einzigen Copy-&-Paste-Befehl. D
 curl -fsSL https://raw.githubusercontent.com/mschuetze/Finder_Kombigrafiken_einsortieren/main/install.sh | bash
 ```
 
-Nach erfolgreicher Installation erscheint die Aktion im Finder unter Rechtsklick > Dienste > Finder_Kombigrafiken_einsortieren. Eine manuelle Eingabe oder Bearbeitung von Befehlen ist nicht erforderlich.
+Nach erfolgreicher Installation zeigt das Terminal den Namen und die installierte Version der Aktion an. Sie erscheint im Finder unter Rechtsklick > Dienste > Finder_Kombigrafiken_einsortieren. Eine manuelle Eingabe oder Bearbeitung von Befehlen ist nicht erforderlich.
