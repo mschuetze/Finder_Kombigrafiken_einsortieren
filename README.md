@@ -16,7 +16,7 @@ Der Fokus liegt auf der schnellen Sortierung von exportierten Grafikdateien nach
 
 ## Installation
 
-Die Installation erfolgt im Terminal über einen einzigen Copy-&-Paste-Befehl. Das Skript lädt den Workflow aus diesem GitHub-Repository herunter, installiert ihn in `~/Library/Services` und lädt Finder neu.
+Die Installation erfolgt im Terminal über einen einzigen Copy-&-Paste-Befehl. Das Skript lädt den Workflow aus diesem GitHub-Repository herunter, installiert ihn in `~/Library/Services` und lädt die macOS-Dienste-Registrierung sowie Finder neu.
 
 1. Terminal öffnen (Finder > Programme > Dienstprogramme > Terminal).
 2. Den folgenden Befehl vollständig kopieren, ins Terminal einfügen und Enter drücken:

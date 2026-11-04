@@ -34,6 +34,7 @@ rm -rf "$TARGET_DIR/$ACTION_NAME"
 cp -R "$WORKFLOW_PATH" "$TARGET_DIR/"
 
 # Finder-Erweiterungen neu einlesen
+killall pbs 2>/dev/null || true
 killall pkd 2>/dev/null || true
 killall Finder 2>/dev/null || true
 
